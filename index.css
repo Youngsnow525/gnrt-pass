@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#main-principal {
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+}
+
+.main-contend {
+    background: #1e293b;
+    border: 1px solid #334155;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+    color: #38bdf8;
+}
+
+.password-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f172a;
+    border: 2px solid #334155;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    word-break: break-all;
+}
+
+#password-display {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+#btn-copiar {
+    background: #334155;
+    color: #f8fafc;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.1s;
+}
+
+#btn-copiar:hover {
+    background: #475569;
+}
+
+#btn-copiar:active {
+    transform: scale(0.95);
+}
+
+.option-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cont-range {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.95rem;
+}
+
+input[type="range"] {
+    accent-color: #38bdf8;
+    cursor: pointer;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #38bdf8;
+    cursor: pointer;
+}
+
+#btn-generate {
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    margin-top: 10px;
+}
+
+#btn-generate:hover {
+    background: #7dd3fc;
+}
+
+#btn-generate:active {
+    transform: scale(0.98);
+}
+
+#footer-principal {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 20px;
+}
