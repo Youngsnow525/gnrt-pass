@@ -4,20 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>forager</title>
+    <title>CATLANG - PASSWORD GENERATOR</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-
-
     <main id="main-principal">
         <div class="main-contend">
             <div>
                 <h1>CATLANG - PASSWORD GENERATOR</h1>
-
-
             </div>
+
             <div class="password-box">
                 <span id="password-display">password</span>
                 <button id="btn-copiar" title="copiar contraseña">Copy</button>
@@ -25,23 +22,35 @@
 
             <div class="option-container">
                 <label class="cont-range">
-                Longitud: <span id="legth-value">12</span>
-                <input type="range" id="legth-range" min="8" max="64" value="12">
+                    Longitud: <span id="legth-value">12</span>
+                    <input type="range" id="legth-range" min="8" max="64" value="12">
                 </label>
-                <label> <input type="checkbox" id="mayuscula" checked > MAYUSCULA (A-Z)</label>
-                <label> <input type="checkbox"  id="minuscula"checked> MINUSCULA (a-z)</label>
+
+                <label> <input type="checkbox" id="mayuscula" checked> MAYUSCULA (A-Z)</label>
+                <label> <input type="checkbox" id="minuscula" checked> MINUSCULA (a-z)</label>
                 <label> <input type="checkbox" id="numeros"> NUMEROS (1-9)</label>
-                <label> <input type="checkbox"  id="simbolos"> SIMBOLOS (!#$%)</label>
+                <label> <input type="checkbox" id="simbolos"> SIMBOLOS (!#$%)</label>
+
+
+                <label> <input type="checkbox" id="excluir-confusos"> Excluir confusos (i, l, 1, o, 0, O)</label>
+                <label> <input type="checkbox" id="modo-passphrase"> Modo Frase (Passphrase de palabras)</label>
 
                 <button id="btn-generate">GENERAR CONTRASEÑA</button>
+            </div>
+
+
+            <div class="history-container">
+                <h3>Historial reciente</h3>
+                <ul id="history-list"></ul>
             </div>
         </div>
     </main>
 
-    <footer id="footer-principal">
-        <div>
 
-        </div>
+    <div id="toast" class="toast">¡Copiado al portapapeles!</div>
+
+    <footer id="footer-principal">
+        <div></div>
     </footer>
 
     <script src="index.js"></script>

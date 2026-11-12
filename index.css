@@ -78,7 +78,7 @@ h1 {
 .option-container {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
 }
 
 .cont-range {
@@ -86,6 +86,7 @@ h1 {
     flex-direction: column;
     gap: 8px;
     font-size: 0.95rem;
+    margin-bottom: 4px;
 }
 
 input[type="range"] {
@@ -97,14 +98,15 @@ label {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     cursor: pointer;
     user-select: none;
+    color: #cbd5e1;
 }
 
 input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     accent-color: #38bdf8;
     cursor: pointer;
 }
@@ -128,6 +130,72 @@ input[type="checkbox"] {
 
 #btn-generate:active {
     transform: scale(0.98);
+}
+
+.history-container {
+    margin-top: 24px;
+    border-top: 1px solid #334155;
+    padding-top: 16px;
+}
+
+.history-container h3 {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+#history-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+#history-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f172a;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-family: monospace;
+    color: #38bdf8;
+}
+
+#history-list button {
+    background: #334155;
+    color: #fff;
+    border: none;
+    padding: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.75rem;
+}
+
+#history-list button:hover {
+    background: #475569;
+}
+
+.toast {
+    position: fixed;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #22c55e;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: bottom 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.toast.show {
+    bottom: 30px;
 }
 
 #footer-principal {
